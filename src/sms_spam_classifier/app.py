@@ -1,8 +1,11 @@
+from pathlib import Path
 import streamlit as st
 import joblib
 
-model = joblib.load("spam_model.pkl")
-vectorizer = joblib.load("vectorizer.pkl")
+BASE_DIR = Path(__file__).parent
+
+model = joblib.load(BASE_DIR / "spam_model.pkl")
+vectorizer = joblib.load(BASE_DIR / "vectorizer.pkl")
 
 st.title("SMS Spam Classifier")
 
