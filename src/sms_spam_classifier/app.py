@@ -10,10 +10,12 @@ vectorizer = joblib.load(BASE_DIR / "vectorizer.pkl")
 st.title("SMS Spam Classifier")
 
 st.write(
-    "This is a simple machine learning that can take any SMS and determine whether it is SPAM or a legitimate message(HAM)"
+    "This is a simple machine learning model that can take any SMS and determine whether it is SPAM or a legitimate message(HAM)"
 )
 
-st.write("Enter any message you have received from your SMS")
+st.write(
+    "You can or enter any message you have received from your SMS on phone and paste it here"
+)
 
 message = st.text_area("Enter SMS Message")
 
