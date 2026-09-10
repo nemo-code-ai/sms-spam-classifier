@@ -14,7 +14,7 @@ st.write(
 )
 
 st.write(
-    "You can or enter any message you have received from your SMS on phone and paste it here"
+    "You can copy or enter any message you have received from your SMS on phone and paste it here"
 )
 
 message = st.text_area("Enter SMS Message")
