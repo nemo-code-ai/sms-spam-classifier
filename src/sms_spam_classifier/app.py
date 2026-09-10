@@ -19,7 +19,7 @@ st.write(
 
 message = st.text_area("Enter SMS Message")
 
-if st.button("Text Message"):
+if st.button("Check Message"):
     message = message.lower()
 
     vector_mess = vectorizer.transform([message])
